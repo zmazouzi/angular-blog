@@ -26,7 +26,7 @@ export class PostDetailComponent implements OnInit {
   ngOnInit() {
 
 
-    this.route.params.switchMap((params: Params) => {
+    this.route.params.forEach((params: Params) => {
 
       let id = params['id'];
 
